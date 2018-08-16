@@ -48,5 +48,6 @@ public class CustomerController {
 	public void deleteCustomer(@PathVariable long id){
 		
 		repository.delete(id);
+		
 	}
 }

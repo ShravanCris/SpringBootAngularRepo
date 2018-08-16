@@ -10,5 +10,6 @@ public interface ConcessionRepository extends CrudRepository<Concession, Long>{
 
 	List<Concession> findByIssuingStation(String issuingStation);
 
+	
 
 }

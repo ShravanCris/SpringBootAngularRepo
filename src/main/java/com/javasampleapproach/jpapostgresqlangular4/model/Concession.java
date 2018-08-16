@@ -9,6 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 @Entity
 @Table(name = "concession")
 public class Concession implements Serializable{
@@ -37,6 +39,7 @@ public class Concession implements Serializable{
 	private String Gender;
 	
 	@Column(name="CC_DOB")
+	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date CC_DOB;
 	
 	@Column(name="CC_AGE")
@@ -58,6 +61,7 @@ public class Concession implements Serializable{
 	private String JS_gender;
 	
 	@Column(name="JS_DOB")
+	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date JS_DOB;
 	
 	@Column(name="JS_AADHAR_NO")
